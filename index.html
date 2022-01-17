@@ -22,7 +22,38 @@
 	<link rel="stylesheet" type="text/css" href="css/snowfall.css">
 </head>
 <body>
+<div class="background_change">
+<FORM NAME="Sel1">
+<INPUT NAME="bkg_url" title="Enter background url here" VALUE="img/GUWEIZ-artist-art-7138306.jpg">
+<INPUT TYPE="button" VALUE="Change" onClick="Complete();">
+<INPUT TYPE="button" VALUE="reset" onClick="Reset();">
+</FORM>
+<FORM NAME="showF">
+<input type="button" style="opacity: 0.1" value="🎨" onClick="showForm();"></FORM><FORM NAME="hideF">
+<input type="button" value="hide" onClick="hideForm();"></FORM>
+</div>
 
+<script>
+Sel1.style.visibility = 'hidden';
+hideF.style.visibility = 'hidden';
+function Complete()
+{
+var body = document.getElementsByTagName('body')[0];
+body.style.backgroundImage = 'url(' + document.Sel1.bkg_url.value + ')';
+}
+function Reset()
+{ var body = document.getElementsByTagName('body')[0];
+body.style.backgroundImage = 'url(img/GUWEIZ-artist-art-7138306.jpg)';
+}
+function hideForm()
+{Sel1.style.visibility = 'hidden';
+showF.style.visibility = 'visible';
+hideF.style.visibility = 'hidden'}
+function showForm()
+{Sel1.style.visibility = 'visible';
+showF.style.visibility = 'hidden';
+hideF.style.visibility = 'visible'}
+</script>
 
 <snowfall>
 	<!-- @link https://emojikopieren.de/ -->
