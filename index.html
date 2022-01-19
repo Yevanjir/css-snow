@@ -18,6 +18,13 @@
 			background-image: url(img/GUWEIZ-artist-art-7138306.jpg); /* insert bkgd url here */
 			background-size: cover;
 		}
+		input[type=button] {
+			style= opacity: 0.1;
+		}
+		
+		input[type=button]:hover {
+			style= opacity: 1;
+		}
 		
 		#sources {
 			display: block;
@@ -47,7 +54,7 @@
 <INPUT TYPE="button" VALUE="reset" onClick="Reset();">
 </FORM>
 <FORM NAME="showF">
-<input type="button" style="opacity: 0.1" value="🎨" onClick="showForm();"></FORM><FORM NAME="hideF">
+<input type="button" value="🎨" onClick="showForm();"></FORM><FORM NAME="hideF">
 <input type="button" value="hide" onClick="hideForm();"></FORM>
 </div>
 
