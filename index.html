@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<title>let it snow</title>
 <link rel="shortcut icon" href="img/snowflake.png" type="image/png">
+
 	<style>
 		html,
 		body {
 			width: 100%;
 			height: 100%;
-
+			
 			padding: 0;
 			margin: 0;
 		}
@@ -39,10 +40,18 @@
 		#sources:hover {
 			opacity: 1;
 		}
+		
+		#image_drop_area{
+		width: 100%;
+		height: 100%;		
+		}
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/snowfall.css">
 </head>
-<body>
+<body >
+
+
+
 		<a id="sources"
                title="Посмотреть репозиторий на Гитхабе"
                href="https://github.com/Yevanjir/css-snow" target="_blank"></a> 
@@ -80,8 +89,10 @@ function showForm()
 showF.style.visibility = 'hidden';
 hideF.style.visibility = 'visible'}
 </script>
-
-<snowfall>
+<div id="image_drop_area" title="Drag and Drop background image here">
+<p id="file_name"></p>
+<script src="dnd_img.js"></script>
+<snowfall> 
 	<!-- @link https://emojikopieren.de/ -->
 	<!-- Add inside the flakes, whatever you like. -->
 <!--	<snowflake><span>❄</span>️️</snowflake>
@@ -134,7 +145,6 @@ hideF.style.visibility = 'visible'}
 	<snowflake><img src="img/snowflake2.png">️</snowflake>
 	<snowflake><img src="img/snowflake2.png">️</snowflake>
 	<snowflake><img src="img/snowflake2.png">️</snowflake>
-</snowfall>
-	
+</snowfall></div>	
 </body>
 </html>
