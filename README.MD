@@ -1,3 +1,4 @@
 Snow on css https://yevanjir.github.io/css-snow/
 ____
-You can change background image in top-left corner
+You can change background image URL in top-left corner
+or just drag & drop image
